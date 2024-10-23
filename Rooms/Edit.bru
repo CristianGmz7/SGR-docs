@@ -1,0 +1,20 @@
+meta {
+  name: Edit
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{PATH}}/rooms/f1d43a19-8255-415d-91e1-08dcbef7e775
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "numberRoom": 101,
+    "typeRoom": "DOBLE",
+    "priceNight": 95,
+    "imageUrl": "https://mediterrani.com/wp-content/uploads/2020/01/Tipos-de-habitaciones-de-un-hotel-2.jpg"
+  }
+}

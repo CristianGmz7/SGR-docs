@@ -1,0 +1,21 @@
+meta {
+  name: Create
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{PATH}}/rooms
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "numberRoom": 102,
+    "typeRoom": "SENCILLA",
+    "priceNight": 75,
+    "imageUrl": "https://www.sambahotels.com/media/items/big/archivo_000--6-.jpeg",
+    "hotelId": "1c2766a6-f00e-49a7-6fa4-08dcbef1b017"
+  }
+}

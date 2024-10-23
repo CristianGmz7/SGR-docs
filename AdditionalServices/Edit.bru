@@ -1,0 +1,18 @@
+meta {
+  name: Edit
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{PATH}}/additionalServices/6ae2b2c2-10b6-48f9-98de-08dcbefe107a
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Acceso a Piscina",
+    "price": 12
+  }
+}
