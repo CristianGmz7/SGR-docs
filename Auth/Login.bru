@@ -1,0 +1,33 @@
+meta {
+  name: Login
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{PATH}}/auth/login
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email": "{{emailPageAdminValue}}",
+    "password": "{{passwordValue}}"
+  }
+}
+
+vars:pre-request {
+  emailPruebaValue: pruebahoteladmin@example.com
+  passwordValue: Temporal01*
+  emailPageAdminValue: pageadmin@sgr.com
+  emailUserValue: user@sgr.com
+}
+
+script:post-response {
+  let response = res.getBody()
+  // respuesta que viene del backend
+  
+  bru.setEnvVar("TOKEN", response.data?.token ?? '')
+  //setea la variable de enterno el TOKEN
+}

@@ -5,14 +5,18 @@ meta {
 }
 
 put {
-  url: {{PATH}}/hotels/db28e5af-5f3b-4895-6fa1-08dcbef1b017
+  url: {{PATH}}/hotels/18317359-6A18-4371-EC46-08DCFDCBC94A
   body: json
-  auth: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{TOKEN}}
 }
 
 body:json {
   {
-    "name": "Hotel El Cerrito (Prueba)",
+    "name": "Hotel El Cerrito",
     "address": "Barrio El Carmen, Santa Rosa de Copan",
     "starsMichelin": 3,
     "numberPhone": 95485010,
