@@ -7,7 +7,11 @@ meta {
 put {
   url: {{PATH}}/reservations/7f8193f0-2db0-4b6c-511e-08dcbf0c8cba
   body: json
-  auth: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{TOKEN}}
 }
 
 body:json {

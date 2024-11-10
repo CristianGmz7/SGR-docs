@@ -7,7 +7,7 @@ meta {
 get {
   url: {{PATH}}/reservations/GetBetweenDates?clientId&page=1&filterStartDate=2024-08-01T16:25:12.044Z&filterEndDate=2024-08-31T16:25:12.044Z
   body: none
-  auth: none
+  auth: bearer
 }
 
 query {
@@ -15,4 +15,8 @@ query {
   page: 1
   filterStartDate: 2024-08-01T16:25:12.044Z
   filterEndDate: 2024-08-31T16:25:12.044Z
+}
+
+auth:bearer {
+  token: {{TOKEN}}
 }

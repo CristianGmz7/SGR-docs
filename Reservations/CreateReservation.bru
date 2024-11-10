@@ -7,19 +7,23 @@ meta {
 post {
   url: {{PATH}}/reservations
   body: json
-  auth: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{TOKEN}}
 }
 
 body:json {
   {
-    "startDate": "2024-08-24T16:25:12.044Z",
-    "finishDate": "2024-08-25T16:25:12.044Z",
-    "clientId": "7fac7ac3-4d80-4c3a-8327-5c46213d1dd3",
+    "startDate": "2024-11-28T16:25:12.044Z",
+    "finishDate": "2024-11-29T16:25:12.044Z",
+    "clientId": "generico",
     "roomsList": [
-      "f1d43a19-8255-415d-91e1-08dcbef7e775"
+      "701573A5-D6BF-457F-88CF-13F0E37F590A"
     ],
     "additionalServicesList": [
-      "6ae2b2c2-10b6-48f9-98de-08dcbefe107a"
+      "0886F99C-BA58-44D6-A55A-3C6D7055FBBC"
     ]
   }
 }
