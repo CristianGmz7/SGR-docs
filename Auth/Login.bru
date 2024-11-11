@@ -30,4 +30,6 @@ script:post-response {
   
   bru.setEnvVar("TOKEN", response.data?.token ?? '')
   //setea la variable de enterno el TOKEN
+  
+  bru.setEnvVar("REFRESH_TOKEN", response.data?.refreshToken ?? '')
 }
