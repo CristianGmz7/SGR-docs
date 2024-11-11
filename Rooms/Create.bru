@@ -7,15 +7,19 @@ meta {
 post {
   url: {{PATH}}/rooms
   body: json
-  auth: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{TOKEN}}
 }
 
 body:json {
   {
-    "numberRoom": 102,
+    "numberRoom": 212,
     "typeRoom": "SENCILLA",
     "priceNight": 75,
-    "imageUrl": "https://www.sambahotels.com/media/items/big/archivo_000--6-.jpeg",
-    "hotelId": "1c2766a6-f00e-49a7-6fa4-08dcbef1b017"
+    "imageUrl": "https://images.mirai.com/INFOROOMS/10583635/OmedPj0qQtQUQZhmagoP/OmedPj0qQtQUQZhmagoP_large.jpg",
+    "hotelId": "DB0A1AB1-0A9D-4511-A112-08DD01EE1906"
   }
 }

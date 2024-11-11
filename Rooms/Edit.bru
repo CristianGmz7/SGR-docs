@@ -5,16 +5,20 @@ meta {
 }
 
 put {
-  url: {{PATH}}/rooms/f1d43a19-8255-415d-91e1-08dcbef7e775
+  url: {{PATH}}/rooms/23B81BE9-32C7-4D31-9D6E-05663B3E5A4A
   body: json
-  auth: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{TOKEN}}
 }
 
 body:json {
   {
-    "numberRoom": 101,
+    "numberRoom": 201,
     "typeRoom": "DOBLE",
-    "priceNight": 95,
-    "imageUrl": "https://mediterrani.com/wp-content/uploads/2020/01/Tipos-de-habitaciones-de-un-hotel-2.jpg"
+    "priceNight": 80,
+    "imageUrl": "https://www.hotelmurcianelva.com/wp-content/uploads/sites/2492/nggallery/content-img//mobile_habitaciones_01_cabecera-copy.jpg"
   }
 }

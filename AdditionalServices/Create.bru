@@ -7,13 +7,17 @@ meta {
 post {
   url: {{PATH}}/additionalServices
   body: json
-  auth: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{TOKEN}}
 }
 
 body:json {
   {
     "name": "Acceso a Piscina",
     "price": 10,
-    "hotelId": "1c2766a6-f00e-49a7-6fa4-08dcbef1b017"
+    "hotelId": "DB0A1AB1-0A9D-4511-A112-08DD01EE1906"
   }
 }
