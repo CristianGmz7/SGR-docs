@@ -1,0 +1,19 @@
+meta {
+  name: GetAllUsersWithUserRole
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{PATH}}/users/allUsersWithUserRole?searchTerm=User
+  body: none
+  auth: bearer
+}
+
+query {
+  searchTerm: User
+}
+
+auth:bearer {
+  token: {{TOKEN}}
+}
