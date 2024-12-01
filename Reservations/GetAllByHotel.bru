@@ -1,0 +1,19 @@
+meta {
+  name: GetAllByHotel
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{PATH}}/reservations/GetReservationsByHotel/8FBDB807-1D0B-4425-8B08-3BA3EC68C743?page=2
+  body: none
+  auth: bearer
+}
+
+query {
+  page: 2
+}
+
+auth:bearer {
+  token: {{TOKEN}}
+}

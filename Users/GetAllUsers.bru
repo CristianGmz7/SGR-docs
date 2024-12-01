@@ -5,9 +5,13 @@ meta {
 }
 
 get {
-  url: {{PATH}}/users/allUsers
+  url: {{PATH}}/users/allUsers?searchTerm=pag
   body: none
   auth: bearer
+}
+
+query {
+  searchTerm: pag
 }
 
 auth:bearer {
