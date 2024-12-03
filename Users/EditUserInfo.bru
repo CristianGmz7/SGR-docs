@@ -1,0 +1,27 @@
+meta {
+  name: EditUserInfo
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{PATH}}/users/editUserInfo
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{TOKEN}}
+}
+
+body:json {
+  {
+    "firstName": "User Edit",
+    "lastName": "Sistema Gestion Reservas Hotel Edit",
+    "profilePictureUrl": "https://media.istockphoto.com/id/1090878494/es/foto/retrato-de-joven-sonriente-a-hombre-guapo-en-camiseta-polo-azul-aislado-sobre-fondo-gris-de.jpg?s=612x612&w=0&k=20&c=dHFsDEJSZ1kuSO4wTDAEaGOJEF-HuToZ6Gt-E2odc6U=",
+    "newEmail": "useredit@sgr.com",
+    "oldEmail": "user@sgr.com",
+    "newPassword": "Temporal02*",
+    "oldPassword": "Temporal01*"
+  }
+}

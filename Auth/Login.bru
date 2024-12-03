@@ -12,19 +12,19 @@ post {
 
 body:json {
   {
-    "email": "{{emailHotel3AdminValue}}",
+    "email": "{{emailUserValue}}",
     "password": "{{passwordValue}}"
   }
 }
 
 vars:pre-request {
   emailPruebaValue: pruebahoteladmin@example.com
-  passwordValue: Temporal01*
   emailPageAdminValue: pageadmin@sgr.com
   emailUserValue: user@sgr.com
   emailHotel1AdminValue: hoteladmin1@sgr.com
   emailHotel2AdminValue: hoteladmin2@sgr.com
   emailHotel3AdminValue: hoteladmin3@sgr.com
+  passwordValue: Temporal01*
 }
 
 script:post-response {
