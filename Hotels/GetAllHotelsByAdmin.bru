@@ -1,0 +1,20 @@
+meta {
+  name: GetAllHotelsByAdmin
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{PATH}}/hotels/getAllByAdminPage?searchTerm&page=1
+  body: none
+  auth: bearer
+}
+
+query {
+  searchTerm: 
+  page: 1
+}
+
+auth:bearer {
+  token: {{TOKEN}}
+}

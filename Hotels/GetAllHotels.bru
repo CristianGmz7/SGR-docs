@@ -5,12 +5,17 @@ meta {
 }
 
 get {
-  url: {{PATH}}/hotels?searchTerm=Dan&page=1
+  url: {{PATH}}/hotels?searchTerm=prueba&page=1&starsNumber=0&department=Copán&city=Santa Rosa de Copán&minLikes=-1&maxLikes=-1
   body: none
   auth: none
 }
 
 query {
-  searchTerm: Dan
+  searchTerm: prueba
   page: 1
+  starsNumber: 0
+  department: Copán
+  city: Santa Rosa de Copán
+  minLikes: -1
+  maxLikes: -1
 }
