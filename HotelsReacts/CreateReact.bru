@@ -1,0 +1,22 @@
+meta {
+  name: CreateReact
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{PATH}}/hotelsReacts
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{TOKEN}}
+}
+
+body:json {
+  {
+    "hotelId": "DE0B0650-8FCE-455C-5F9F-08DD162B5A9C",
+    "action": "LIKED"
+  }
+}

@@ -1,0 +1,27 @@
+meta {
+  name: GetByHotelAndUser
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{PATH}}/hotelsReacts?hotelId=DE0B0650-8FCE-455C-5F9F-08DD162B5A9C&isAuthenticated=ISAUTHENTICATED
+  body: none
+  auth: bearer
+}
+
+query {
+  hotelId: DE0B0650-8FCE-455C-5F9F-08DD162B5A9C
+  isAuthenticated: ISAUTHENTICATED
+}
+
+auth:bearer {
+  token: {{TOKEN}}
+}
+
+body:json {
+  {
+    "hotelId": "DE0B0650-8FCE-455C-5F9F-08DD162B5A9C",
+    "isAuthenticated": true
+  }
+}
