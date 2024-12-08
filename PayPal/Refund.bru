@@ -1,0 +1,22 @@
+meta {
+  name: Refund
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{PATH}}/paypal/refund
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{TOKEN}}
+}
+
+body:json {
+  {
+    "captureId": "4NY92188A0385345A",
+    "reason": null
+  }
+}

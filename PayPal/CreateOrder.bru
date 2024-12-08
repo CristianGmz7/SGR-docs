@@ -1,0 +1,22 @@
+meta {
+  name: CreateOrder
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{PATH}}/paypal/create-order
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{TOKEN}}
+}
+
+body:json {
+  {
+    "amount": 50,
+    "currency": "USD"
+  }
+}

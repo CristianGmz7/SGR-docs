@@ -1,0 +1,15 @@
+meta {
+  name: CaptureOrder
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{PATH}}/paypal/capture-order/5J086860R0515645M
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{TOKEN}}
+}
